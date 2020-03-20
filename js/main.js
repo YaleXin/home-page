@@ -2,7 +2,7 @@
  * @Description: 
  * @Author: Yale_Xin
  * @Date: 2020-03-20 13:14:06
- * @LastEditTime: 2020-03-20 14:00:23
+ * @LastEditTime: 2020-03-20 20:15:09
  * @LastEditors: Yale_Xin
  */
 // vue的逻辑代码
@@ -31,6 +31,7 @@ var app = new Vue({
     }
 });
 
+
 //时钟更新
 function setTime(){
     setInterval("uploadTime()",1000);
@@ -45,3 +46,4 @@ function uploadTime(){
     s = s<10?("0"+s):s;
     document.getElementById("clock").innerHTML = h+":"+m+":"+s;
 }
+
