@@ -2,25 +2,29 @@
  * @Description: 
  * @Author: Yale_Xin
  * @Date: 2020-03-20 13:11:29
- * @LastEditTime: 2020-03-20 14:11:27
+ * @LastEditTime: 2020-03-20 18:06:55
  * @LastEditors: Yale_Xin
  -->
 <!DOCTYPE html>
-<html lang="zh" >
+<html lang="zh">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>个人主页</title>
-
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+    </link>
 </head>
+
 <body onload="setTime()">
-    <div id="app" :class="isPhone?'phone':'pc'" >
+    <div id="app" :class="isPhone?'phone':'pc'">
         <span id="clock"></span>
         <br>
-        <input type="text"@keydown.enter="enter" v-model="input" @blur="blur" @focus="focus">
+        <input id="input" type="text" @keydown.enter="enter" v-model="input" @blur="blur" @focus="focus">
     </div>
     <script src="./lib/vue.js"></script>
     <script src="./js/main.js"></script>
 </body>
+
 </html>

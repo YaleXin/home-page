@@ -1,0 +1,22 @@
+@font-face {
+    font-family: "clock_font";
+    src: url(../fonts/LiquidCrystal-BoldItalic.otf);
+}
+@font-face {
+    font-family: "clock_font2";
+    src: url(../fonts/LiquidCrystal-Bold.otf);
+}
+#clock{
+    font-family: "clock_font2";
+    color: aqua;
+    font-size: 50px;
+}
+.pc{
+    text-align: center;
+    /* align-items: center; */
+}
+#input{
+    width: 560px;
+    height: 44px;
+    /* align-items: center; */
+}
