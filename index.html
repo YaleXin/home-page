@@ -1,0 +1,26 @@
+<!--
+ * @Description: 
+ * @Author: Yale_Xin
+ * @Date: 2020-03-20 13:11:29
+ * @LastEditTime: 2020-03-20 14:04:15
+ * @LastEditors: Yale_Xin
+ -->
+<!DOCTYPE html>
+<html lang="zh" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>个人主页</title>
+    <script src="./lib/vue.js"></script>
+    <script src="./js/main.js"></script>
+</head>
+<body onload="setTime()">
+    <div id="app" :class="isPhone?'phone':'pc'" >
+        <span id="clock"></span>
+        <br>
+        <input type="text"@keydown.enter="enter" v-model="input" @blur="blur" @focus="focus">
+    </div>
+
+</body>
+</html>
