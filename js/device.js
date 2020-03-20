@@ -2,7 +2,7 @@
  * @Description: 
  * @Author: Yale_Xin
  * @Date: 2020-03-20 18:57:13
- * @LastEditTime: 2020-03-20 23:02:34
+ * @LastEditTime: 2020-03-20 23:39:44
  * @LastEditors: Yale_Xin
  */
 //判断设备类型
@@ -14,7 +14,7 @@ try {
         console.log(document.getElementById("app").offsetHeight);
         console.log("width:"+document.getElementById("input_div").offsetWidth);
         
-        document.getElementById("input_div").style.height = "30px";
+        document.getElementById("input_div").style.height = document.getElementById("input_div").offsetWidth*0.08.toString()+"px";
         
     } else {
         console.log("pc设备");
