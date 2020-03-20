@@ -24,7 +24,7 @@
     width: 560px;
     /* align-items: center; */
 }
-.phone .input_div{
+.phone #input_div{
     width: 80%;
     height: 100%;
     background-image: url("../imgs/input-bg.png");
@@ -34,9 +34,13 @@
     /* align-items: center; */
 }
 .phone #input{
+    width: 95%;
+    /* width: 80%; */
     /* width: 80%; */
     /* background-image: url("../imgs/input-bg.png"); */
     /* background-size: cover; */
+    margin-left: 0px;
+    margin-top: 10px;
     border-style: none;
     /* border: 0; */
     outline: none;
