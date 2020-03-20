@@ -2,7 +2,7 @@
  * @Description: 
  * @Author: Yale_Xin
  * @Date: 2020-03-20 13:11:29
- * @LastEditTime: 2020-03-20 14:04:15
+ * @LastEditTime: 2020-03-20 14:11:27
  * @LastEditors: Yale_Xin
  -->
 <!DOCTYPE html>
@@ -12,8 +12,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>个人主页</title>
-    <script src="./lib/vue.js"></script>
-    <script src="./js/main.js"></script>
+
 </head>
 <body onload="setTime()">
     <div id="app" :class="isPhone?'phone':'pc'" >
@@ -21,6 +20,7 @@
         <br>
         <input type="text"@keydown.enter="enter" v-model="input" @blur="blur" @focus="focus">
     </div>
-
+    <script src="./lib/vue.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 </html>
