@@ -27,12 +27,6 @@
     border-radius: 20px;
     padding: 0 0 0 10px;
 }
-/* 获取焦点时 */
-#input:focus{
-    width: 249px;
-    animation-name: input_width2long;
-    animation-duration: 500ms;
-}
 @keyframes input_width2long{
     from{
         width: 100px;
