@@ -2,7 +2,7 @@
  * @Description: 
  * @Author: Yale_Xin
  * @Date: 2020-03-20 13:14:06
- * @LastEditTime: 2020-03-21 15:29:16
+ * @LastEditTime: 2020-03-21 15:39:45
  * @LastEditors: Yale_Xin
  */
 // vue的逻辑代码
@@ -55,7 +55,8 @@ var app = new Vue({
             document.getElementById("input").style.width = "100px";
         },
         change: function () {
-            var sl_index = document.getElementById("plan").selectedIndex;
+            // document.getElementById("input").placeholder = "11111";
+            var sl_index = document.getElementById("engine_select").selectedIndex;
             this.engine_url = this.list_engine[sl_index];
         },
     }
