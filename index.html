@@ -2,7 +2,7 @@
  * @Description: 
  * @Author: Yale_Xin
  * @Date: 2020-03-20 13:11:29
- * @LastEditTime: 2020-03-21 10:01:14
+ * @LastEditTime: 2020-03-21 11:36:49
  * @LastEditors: Yale_Xin
  -->
 <!DOCTYPE html>
@@ -22,14 +22,14 @@
     <div id="app" class="phone" >
         <span id="clock"></span>
         <br>
-        <!-- <div id="input_div"> -->
-
             <input id="input" type="text" @keydown.enter="enter" v-model="input" @blur="blur" @focus="focus">
-        <!-- </div> -->
+            <select name="plan" id="plan" @change="change"> 
+                <option v-for="(item,index) in s_engine">
+                    {{item}}
+                </option> 
+            </select>
     </div>
     <script src="./js/device.js"></script>
-        
-    </script>
     <script src="./lib/vue.js"></script>
     <script src="./js/main.js"></script>
 </body>
