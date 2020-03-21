@@ -11,26 +11,11 @@
     color: rgb(5, 122, 151);
     font-size: 50px;
 }
-/* #app{
-    height: 200px;
-} */
-/* .pc{
-    text-align: center;
-    align-items: center;
-} */
 .phone{
     text-align: center;
-    
-    /* align-items: center; */
 }
-/* .pc #input{
-    width: 100%;
-    border-radius: 20px;
-    border: 1px solid gainsboro;
-    align-items: center;
-} */
 .phone #input{
-    width: 249px;
+    width: 100px;
     height: 30px;
     border-radius: 20px;
     border: 1px solid gainsboro;
@@ -41,4 +26,26 @@
     height: 30px;
     border-radius: 20px;
     padding: 0 0 0 10px;
+}
+/* 获取焦点时 */
+#input:focus{
+    width: 249px;
+    animation-name: input_width2long;
+    animation-duration: 500ms;
+}
+@keyframes input_width2long{
+    from{
+        width: 100px;
+    }
+    to{
+        width: 249px;
+    }
+}
+@keyframes input_width2short{
+    from{
+        width: 249px;
+    }
+    to{
+        width: 100px;
+    }
 }
