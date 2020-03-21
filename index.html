@@ -2,7 +2,7 @@
  * @Description: 
  * @Author: Yale_Xin
  * @Date: 2020-03-20 13:11:29
- * @LastEditTime: 2020-03-21 11:36:49
+ * @LastEditTime: 2020-03-21 14:07:13
  * @LastEditors: Yale_Xin
  -->
 <!DOCTYPE html>
@@ -14,12 +14,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>个人主页</title>
     <link rel="stylesheet" type="text/css" href="./css/main.css">
-    
-    </link>
+    <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">    </link>
 </head>
 
 <body onload="setTime()"  >
     <div id="app" class="phone" >
+        <img src="./imgs/logo.png">
+        <br>
         <span id="clock"></span>
         <br>
             <input id="input" type="text" @keydown.enter="enter" v-model="input" @blur="blur" @focus="focus">

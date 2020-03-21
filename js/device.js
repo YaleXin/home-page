@@ -9,16 +9,8 @@
 try {
     if (/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
         console.log("移动设备");
-        // console.log(document.getElementById("app").offsetWidth);
-        // document.getElementById("app").style.height="100px";
-        // console.log(document.getElementById("app").offsetHeight);
-        // console.log("width:"+document.getElementById("input_div").offsetWidth);
-        
-        // document.getElementById("input_div").style.height = document.getElementById("input_div").offsetWidth*0.08.toString()+"px";
-        
     } else {
         console.log("pc设备");
-        document.getElementById("app").className = "pc";
-        
+        document.getElementById("app").className = "pc";        
     }
 } catch (e) { }
