@@ -14,44 +14,29 @@
 /* #app{
     height: 200px;
 } */
-.pc{
+/* .pc{
     text-align: center;
-    /* align-items: center; */
-}
+    align-items: center;
+} */
 .phone{
     text-align: center;
     
     /* align-items: center; */
 }
-.pc #input{
+/* .pc #input{
     width: 100%;
     border-radius: 20px;
     border: 1px solid gainsboro;
-    /* align-items: center; */
-}
+    align-items: center;
+} */
 .phone #input_div{
-    width: 80%;
-    /* height: 50px; */
-    /* background-image: url("../imgs/input-bg.png"); */
-    /* background-size: 90%; */
-    /* background-size: contain; */
-    /* background-repeat: no-repeat; */
-    /* border-style: none; */
-    /* height: 10%; */
+    width: 800px;
+    height: 40px;
     align-items: center;
 }
 .phone #input{
-    width: 100%;
+    /* width: 100%; */
     border-radius: 20px;
     border: 1px solid gainsboro;
-    /* width: 80%; */
-    /* width: 80%; */
-    /* background-image: url("../imgs/input-bg.png"); */
-    /* background-size: cover; */
-
-    /* border: 0; */
     outline: none;
-    /* background: transparent; */
-    /* height: 10%; */
-    /* align-items: center; */
 }
