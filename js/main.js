@@ -2,7 +2,7 @@
  * @Description: 
  * @Author: Yale_Xin
  * @Date: 2020-03-20 13:14:06
- * @LastEditTime: 2020-03-21 15:39:45
+ * @LastEditTime: 2020-03-21 15:56:32
  * @LastEditors: Yale_Xin
  */
 // vue的逻辑代码
@@ -19,6 +19,8 @@ var app = new Vue({
             "https://www.so.com/s?q=",
         ],
         s_engine: ["必应", "百度", "谷歌", "搜狗", "360"],
+        place_engine: ["微软Bing搜索-国内版", "百度一下，你就知道",
+            "Google", "搜狗搜索引擎，上网从搜狗开始","360搜索，SO靠谱"],
         engine_url: "",
     },
     methods: {
@@ -55,8 +57,9 @@ var app = new Vue({
             document.getElementById("input").style.width = "100px";
         },
         change: function () {
-            // document.getElementById("input").placeholder = "11111";
+            
             var sl_index = document.getElementById("engine_select").selectedIndex;
+            document.getElementById("input").placeholder = this.place_engine[sl_index];
             this.engine_url = this.list_engine[sl_index];
         },
     }
