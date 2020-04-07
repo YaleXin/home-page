@@ -10,6 +10,8 @@
     font-family: "clock_font2";
     color: rgb(5, 122, 151);
     font-size: 50px;
+    background-color: aquamarine;
+    border-radius: 10px;
 }
 .phone{
     text-align: center;
