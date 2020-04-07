@@ -10,7 +10,7 @@
     font-family: "clock_font2";
     color: rgb(5, 122, 151);
     font-size: 50px;
-    background-color: rgb(206, 209, 5);
+    background-color: rgb(255, 255, 255);
     border-radius: 10px;
     padding: 5px;
 }
@@ -22,6 +22,12 @@
 }
 html,body{
     height: 100%;
+    width: 100%;
+    background: url('https://api.dujin.org/bing/1920.php');
+    -moz-background-size:cover;
+    -ms-background-size:cover;
+    -webkit-background-size:cover;
+    background-size: cover;
 }
 .phone #input{
     margin-top: 10px;
@@ -58,10 +64,10 @@ html,body{
     text-align: center;
     /* bottom: 20px; */
     /* height: 25px; */
-    margin-top: -110px;
+    margin-top: -50px;
 }
 #jinrishici-sentence{
     padding: 3px;
-    background-color: rgb(206, 209, 5);
+    background-color: rgb(255, 255, 255);
     border-radius: 5px;
 }
