@@ -15,6 +15,7 @@
 }
 .phone{
     text-align: center;
+    padding-bottom: 500px;
 }
 .phone #input{
     width: 100px;
@@ -44,4 +45,13 @@
     to{
         width: 100px;
     }
+}
+
+#footer{
+    text-align: center;
+
+}
+#jinrishici-sentence{
+    background-color: aquamarine;
+    border-radius: 5px;
 }
