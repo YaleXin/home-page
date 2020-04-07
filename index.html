@@ -18,7 +18,8 @@
     </link>
 </head>
 
-<body onload="setTime()" style="background-image: url('https://api.dujin.org/bing/1920.php');background-repeat: no-repeat;background-size: cover;">
+<body onload="setTime()"
+    style="background-image: url('https://api.dujin.org/bing/1920.php');background-repeat: no-repeat;background-size: cover;">
     <div id="app" class="phone">
         <span id="clock">00:00:00
         </span>
@@ -36,6 +37,10 @@
     <script src="./js/device.js"></script>
     <script src="./lib/vue.js"></script>
     <script src="./js/main.js"></script>
+    <script type="text/javascript" src="https://api.uixsj.cn/hitokoto/api.php?type=hitokoto&code=js"></script>
+    <div id="hitokoto" style="margin-top: 500px;">
+        <script>hitokoto()</script>
+    </div>
 </body>
 
 </html>
