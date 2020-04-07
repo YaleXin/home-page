@@ -20,7 +20,7 @@ var app = new Vue({
         ],
         s_engine: ["必应", "百度", "谷歌", "搜狗", "360"],
         place_engine: ["微软Bing搜索-国内版", "百度一下，你就知道",
-            "Google", "搜狗搜索引擎，上网从搜狗开始","360搜索，SO靠谱"],
+            "Google", "搜狗搜索引擎，上网从搜狗开始", "360搜索，SO靠谱"],
         engine_url: "",
     },
     methods: {
@@ -37,9 +37,9 @@ var app = new Vue({
             document.getElementById("input").style.animationName = "input_width2long";
             document.getElementById("input").style.animationDuration = "500ms";
             setTimeout(function () {
-                //700ms后取消动画 否则 input_width2long 动画只生效一次
+                //5500ms后取消动画 否则 input_width2long 动画只生效一次
                 document.getElementById("input").style.animation = "none";
-            }, 700);
+            }, 550);
             // 获得焦点后宽度变大
             document.getElementById("input").style.width = "249px";
 
@@ -50,14 +50,14 @@ var app = new Vue({
             document.getElementById("input").style.animationName = "input_width2short";
             document.getElementById("input").style.animationDuration = "500ms";
             setTimeout(function () {
-                //700ms后取消动画 否则 input_width2short 动画只生效一次
+                //550ms后取消动画 否则 input_width2short 动画只生效一次
                 document.getElementById("input").style.animation = "none";
-            }, 700);
+            }, 550);
             // 失去焦点后宽度变小
             document.getElementById("input").style.width = "100px";
         },
         change: function () {
-            
+
             var sl_index = document.getElementById("engine_select").selectedIndex;
             document.getElementById("input").placeholder = this.place_engine[sl_index];
             this.engine_url = this.list_engine[sl_index];
@@ -66,18 +66,4 @@ var app = new Vue({
 });
 
 
-//时钟更新
-function setTime() {
-    setInterval("uploadTime()", 1000);
-}
-function uploadTime() {
-    var time = new Date();
-    var h = time.getHours();
-    var m = time.getMinutes();
-    var s = time.getSeconds();
-    h = h < 10 ? ("0" + h) : h;
-    m = m < 10 ? ("0" + m) : m;
-    s = s < 10 ? ("0" + s) : s;
-    document.getElementById("clock").innerHTML = h + ":" + m + ":" + s;
-}
 
