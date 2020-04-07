@@ -1,5 +1,7 @@
 //时钟更新
 function setTime() {
+    w1 = window.screen.height;
+        document.getElementById("mainBody").style.height = w1;
     setInterval("uploadTime()", 1000);
 }
 function uploadTime() {

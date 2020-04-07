@@ -16,14 +16,16 @@
     <link rel="stylesheet" type="text/css" href="./css/main.css">
     <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     </link>
+    
 </head>
 
-<body onload="setTime()"
+<body onload="setTime()" id="mainBody" 
     style="background-image: url('https://api.dujin.org/bing/1920.php');background-repeat: no-repeat;background-size: cover;">
+    
     <div id="app" class="phone">
         <span id="clock">00:00:00
         </span>
-        <script src="./js/clock.js"></script>
+        
         <br>
         <input id="input" type="text" @keydown.enter="enter" v-model="input" @blur="blur" @focus="focus"
             placeholder="微软Bing搜索-国内版">
@@ -34,6 +36,7 @@
             </option>
         </select>
     </div>
+    <script src="./js/clock.js"></script>
     <script src="./js/device.js"></script>
     <script src="./lib/vue.js"></script>
     <script src="./js/main.js"></script>

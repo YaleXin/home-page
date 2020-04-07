@@ -14,12 +14,15 @@
     border-radius: 10px;
 }
 .phone{
+    min-height: 100%;
+    margin-top: 100px;
     text-align: center;
-    padding-bottom: 400px;
+    padding-bottom: 50px;
+}
+html,body{
+    height: 100%;
 }
 .phone #input{
-    width: 100px;
-    height: 30px;
     border-radius: 20px;
     border: 1px solid gainsboro;
     outline: none;
@@ -48,8 +51,11 @@
 }
 
 #footer{
+    /* position: absolute; */
     text-align: center;
-
+    /* bottom: 20px; */
+    height: 25px;
+    margin-top: -100px;
 }
 #jinrishici-sentence{
     background-color: aquamarine;
