@@ -2,8 +2,8 @@
  * @Description: 
  * @Author: Yale_Xin
  * @Date: 2020-03-20 13:14:06
- * @LastEditTime: 2020-03-21 15:56:32
- * @LastEditors: Yale_Xin
+ * @LastEditTime: 2020-04-09 19:42:38
+ * @LastEditors: YaleXin
  */
 // vue的逻辑代码
 var app = new Vue({
@@ -41,7 +41,7 @@ var app = new Vue({
                 document.getElementById("input").style.animation = "none";
             }, 550);
             // 获得焦点后宽度变大
-            document.getElementById("input").style.width = "249px";
+            document.getElementById("input").style.width = "70%";
 
         },
         // 失去焦点
@@ -54,7 +54,7 @@ var app = new Vue({
                 document.getElementById("input").style.animation = "none";
             }, 550);
             // 失去焦点后宽度变小
-            document.getElementById("input").style.width = "100px";
+            document.getElementById("input").style.width = "40%";
         },
         change: function () {
 

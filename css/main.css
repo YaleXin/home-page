@@ -30,6 +30,7 @@ html,body{
     background-size: cover;
 }
 .phone #input{
+    width: 40%;
     margin-top: 10px;
     height: 25px;
     border-radius: 20px;
@@ -44,18 +45,18 @@ html,body{
 }
 @keyframes input_width2long{
     from{
-        width: 100px;
+        width: 40%;
     }
     to{
-        width: 249px;
+        width: 70%;
     }
 }
 @keyframes input_width2short{
     from{
-        width: 249px;
+        width: 70%;
     }
     to{
-        width: 100px;
+        width: 40%;
     }
 }
 
