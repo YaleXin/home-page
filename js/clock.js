@@ -1,7 +1,14 @@
+/*
+ * @Author: YaleXin
+ * @Date: 2020-04-07 21:39:29
+ * @LastEditTime: 2020-04-09 19:09:40
+ * @LastEditors: YaleXin
+ * @Description: 
+ * @FilePath: \my_html5_workspace\home-page\js\clock.js
+ * @祈祷不出现BUG
+ */
 //时钟更新
 function setTime() {
-    w1 = window.screen.height;
-        document.getElementById("mainBody").style.height = w1;
     setInterval("uploadTime()", 1000);
 }
 function uploadTime() {
