@@ -16,7 +16,8 @@
 }
 .phone{
     min-height: 100%;
-    margin-top: 30px;
+    min-width: 100%;
+    /* margin-top: 30px; */
     text-align: center;
     /* padding-bottom: 50px; */
 }
