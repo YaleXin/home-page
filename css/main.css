@@ -24,9 +24,9 @@ html,body{
     height: 100%;
     width: 100%;
     background: url('https://api.dujin.org/bing/1920.php');
-    -moz-background-size:cover;
-    -ms-background-size:cover;
-    -webkit-background-size:cover;
+    /* -moz-background-size:cover; */
+    /* -ms-background-size:cover; */
+    /* -webkit-background-size:cover; */
     background-size: cover;
 }
 .phone #input{
